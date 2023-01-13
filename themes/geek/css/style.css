@@ -1,0 +1,18 @@
+/* Error: expected ":".
+ *   ,
+ * 1 | $default_font_size = 1em;
+ *   |                    ^
+ *   '
+ *   _variables.scss 1:20  @import
+ *   style.scss 3:9        root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ":".\a   \2577 \a 1 \2502  $default_font_size = 1em;\d\a   \2502                     ^\a   \2575 \a   _variables.scss 1:20  @import\a   style.scss 3:9        root stylesheet';
+}
